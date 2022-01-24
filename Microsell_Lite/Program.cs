@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsell_Lite.Productos;
+using Microsell_Lite.Utilitarios;
+
 
 namespace Microsell_Lite
 {
@@ -17,7 +19,7 @@ namespace Microsell_Lite
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Reg_Prod());
+            Application.Run(new Frm_Categoria());
         }
     }
 }

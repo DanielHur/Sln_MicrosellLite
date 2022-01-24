@@ -19,7 +19,8 @@ namespace Microsell_Lite.Utilitarios
 
         private void Frm_Reg_Prod_Load(object sender, EventArgs e)
         {
-
+            Configurar_listView();
+            Cargar_Todos_Categ();
         }
 
         private void pnl_titu_MouseMove(object sender, MouseEventArgs e)
@@ -70,7 +71,22 @@ namespace Microsell_Lite.Utilitarios
             RN_Categoria obj = new RN_Categoria();
             DataTable dato = new DataTable();
 
+            dato = obj.RN_Mostar_Todas_Categorias();
+            if(dato.Rows.Count > 0) 
+            {
+                Llenar_ListView(dato);
+            }
+            else 
+            {
+                lsv_cat.Items.Clear();
+            }
+
         }
 
+        private void bt_add_Click(object sender, EventArgs e)
+        {
+            pnl_add.Visible = true;
+            txt_nom.Focus();
+        }
     }
 }

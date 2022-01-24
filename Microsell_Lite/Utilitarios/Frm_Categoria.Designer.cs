@@ -35,9 +35,9 @@
             this.btn_cerrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_add = new Klik.Windows.Forms.v1.EntryLib.ELGroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_nom = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_listo = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.btn_cancel = new Klik.Windows.Forms.v1.EntryLib.ELButton();
@@ -64,7 +64,7 @@
             this.pnl_titu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_titu.Location = new System.Drawing.Point(0, 0);
             this.pnl_titu.Name = "pnl_titu";
-            this.pnl_titu.Size = new System.Drawing.Size(629, 43);
+            this.pnl_titu.Size = new System.Drawing.Size(541, 43);
             this.pnl_titu.TabIndex = 1;
             this.pnl_titu.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnl_titu_MouseMove);
             // 
@@ -78,7 +78,7 @@
             this.btn_cerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cerrar.ForeColor = System.Drawing.Color.White;
             this.btn_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar.Image")));
-            this.btn_cerrar.Location = new System.Drawing.Point(587, 4);
+            this.btn_cerrar.Location = new System.Drawing.Point(499, 4);
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.Size = new System.Drawing.Size(32, 32);
             this.btn_cerrar.TabIndex = 6;
@@ -121,28 +121,28 @@
             this.pnl_add.CaptionStyle.TextStyle.TextType = Klik.Windows.Forms.v1.Common.TextTypes.BlockShadow;
             this.pnl_add.CaptionStyle.Visible = false;
             this.pnl_add.CaptionStyle.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
-            this.pnl_add.Controls.Add(this.textBox2);
+            this.pnl_add.Controls.Add(this.txt_nom);
             this.pnl_add.Controls.Add(this.label3);
-            this.pnl_add.Controls.Add(this.textBox1);
+            this.pnl_add.Controls.Add(this.txt_id);
             this.pnl_add.Controls.Add(this.label2);
             this.pnl_add.Controls.Add(this.btn_listo);
             this.pnl_add.Controls.Add(this.btn_cancel);
-            this.pnl_add.Location = new System.Drawing.Point(498, 97);
+            this.pnl_add.Location = new System.Drawing.Point(25, 58);
             this.pnl_add.Name = "pnl_add";
             this.pnl_add.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.pnl_add.Size = new System.Drawing.Size(73, 44);
+            this.pnl_add.Size = new System.Drawing.Size(474, 349);
             this.pnl_add.TabIndex = 3;
             this.pnl_add.Visible = false;
             this.pnl_add.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
-            // textBox2
+            // txt_nom
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox2.Location = new System.Drawing.Point(28, 101);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(352, 25);
-            this.textBox2.TabIndex = 10;
+            this.txt_nom.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nom.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_nom.Location = new System.Drawing.Point(28, 101);
+            this.txt_nom.Name = "txt_nom";
+            this.txt_nom.Size = new System.Drawing.Size(352, 25);
+            this.txt_nom.TabIndex = 10;
             // 
             // label3
             // 
@@ -154,14 +154,14 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Categoria";
             // 
-            // textBox1
+            // txt_id
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(27, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 25);
-            this.textBox1.TabIndex = 7;
+            this.txt_id.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_id.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_id.Location = new System.Drawing.Point(27, 42);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(100, 25);
+            this.txt_id.TabIndex = 7;
             // 
             // label2
             // 
@@ -257,7 +257,7 @@
             this.bt_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_edit.ForeColor = System.Drawing.Color.White;
             this.bt_edit.Image = ((System.Drawing.Image)(resources.GetObject("bt_edit.Image")));
-            this.bt_edit.Location = new System.Drawing.Point(328, 60);
+            this.bt_edit.Location = new System.Drawing.Point(240, 60);
             this.bt_edit.Name = "bt_edit";
             this.bt_edit.Size = new System.Drawing.Size(32, 32);
             this.bt_edit.TabIndex = 7;
@@ -274,23 +274,24 @@
             this.bt_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add.ForeColor = System.Drawing.Color.White;
             this.bt_add.Image = ((System.Drawing.Image)(resources.GetObject("bt_add.Image")));
-            this.bt_add.Location = new System.Drawing.Point(373, 57);
+            this.bt_add.Location = new System.Drawing.Point(285, 57);
             this.bt_add.Name = "bt_add";
             this.bt_add.Size = new System.Drawing.Size(32, 32);
             this.bt_add.TabIndex = 8;
             this.bt_add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_add.UseVisualStyleBackColor = true;
+            this.bt_add.Click += new System.EventHandler(this.bt_add_Click);
             // 
             // Frm_Categoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(629, 678);
+            this.ClientSize = new System.Drawing.Size(541, 461);
+            this.Controls.Add(this.pnl_add);
             this.Controls.Add(this.bt_add);
             this.Controls.Add(this.bt_edit);
             this.Controls.Add(this.lsv_cat);
-            this.Controls.Add(this.pnl_add);
             this.Controls.Add(this.pnl_titu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Categoria";
@@ -316,9 +317,9 @@
         private Klik.Windows.Forms.v1.EntryLib.ELGroupBox pnl_add;
         private Klik.Windows.Forms.v1.EntryLib.ELButton btn_cancel;
         private Klik.Windows.Forms.v1.EntryLib.ELButton btn_listo;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_id;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_nom;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bt_add;
         private System.Windows.Forms.Button bt_edit;
