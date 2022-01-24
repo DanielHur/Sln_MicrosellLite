@@ -21,6 +21,7 @@ namespace Microsell_Lite.Utilitarios
         {
             Configurar_listView();
             Cargar_Todos_Categ();
+
         }
 
         private void pnl_titu_MouseMove(object sender, MouseEventArgs e)
