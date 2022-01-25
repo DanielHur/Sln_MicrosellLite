@@ -127,7 +127,7 @@
             this.pnl_add.Controls.Add(this.label2);
             this.pnl_add.Controls.Add(this.btn_listo);
             this.pnl_add.Controls.Add(this.btn_cancel);
-            this.pnl_add.Location = new System.Drawing.Point(25, 58);
+            this.pnl_add.Location = new System.Drawing.Point(25, 94);
             this.pnl_add.Name = "pnl_add";
             this.pnl_add.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.pnl_add.Size = new System.Drawing.Size(474, 349);
@@ -156,6 +156,7 @@
             // 
             // txt_id
             // 
+            this.txt_id.Enabled = false;
             this.txt_id.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_id.ForeColor = System.Drawing.Color.DimGray;
             this.txt_id.Location = new System.Drawing.Point(27, 42);
@@ -204,6 +205,7 @@
             this.btn_listo.TextStyle.Text = "Listo";
             this.btn_listo.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_listo.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            this.btn_listo.Click += new System.EventHandler(this.btn_listo_Click);
             // 
             // btn_cancel
             // 
@@ -257,12 +259,13 @@
             this.bt_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_edit.ForeColor = System.Drawing.Color.White;
             this.bt_edit.Image = ((System.Drawing.Image)(resources.GetObject("bt_edit.Image")));
-            this.bt_edit.Location = new System.Drawing.Point(240, 60);
+            this.bt_edit.Location = new System.Drawing.Point(411, 60);
             this.bt_edit.Name = "bt_edit";
             this.bt_edit.Size = new System.Drawing.Size(32, 32);
             this.bt_edit.TabIndex = 7;
             this.bt_edit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_edit.UseVisualStyleBackColor = true;
+            this.bt_edit.Click += new System.EventHandler(this.bt_edit_Click);
             // 
             // bt_add
             // 
@@ -274,7 +277,7 @@
             this.bt_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add.ForeColor = System.Drawing.Color.White;
             this.bt_add.Image = ((System.Drawing.Image)(resources.GetObject("bt_add.Image")));
-            this.bt_add.Location = new System.Drawing.Point(285, 57);
+            this.bt_add.Location = new System.Drawing.Point(456, 57);
             this.bt_add.Name = "bt_add";
             this.bt_add.Size = new System.Drawing.Size(32, 32);
             this.bt_add.TabIndex = 8;

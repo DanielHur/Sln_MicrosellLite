@@ -10,7 +10,8 @@ namespace Prj_Capa_Datos
     {
         public string Conectar()
         {
-            return "data source =DESKTOP-M9TOKFV\SQLEXPRESS;Initial Catalog=POS_Microsell_Lite;Integrated security=true";
+            return @"data Source=DESKTOP-M9TOKFV\SQLEXPRESS;Initial Catalog=POS_Microsell_Lite;Integrated Security = true";//"data source =DESKTOP-M9TOKFV\SQLEXPRESS;Initial Catalog=POS_Microsell_Lite;Integrated security=true";
+            
         }
     }
 }

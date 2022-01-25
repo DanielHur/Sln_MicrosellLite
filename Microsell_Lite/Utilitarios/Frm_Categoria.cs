@@ -8,10 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Prj_Capa_Negocio;
+using Prj_Capa_Datos;
 namespace Microsell_Lite.Utilitarios
 {
     public partial class Frm_Categoria : Form
     {
+        public bool editar = false;
         public Frm_Categoria()
         {
             InitializeComponent();
@@ -73,21 +75,69 @@ namespace Microsell_Lite.Utilitarios
             DataTable dato = new DataTable();
 
             dato = obj.RN_Mostar_Todas_Categorias();
-            if(dato.Rows.Count > 0) 
+            if (dato != null)
             {
-                Llenar_ListView(dato);
+                if (dato.Rows.Count > 0)
+                {
+                    Llenar_ListView(dato);
+                }
+                else
+                {
+                    lsv_cat.Items.Clear();
+                }
             }
-            else 
-            {
-                lsv_cat.Items.Clear();
-            }
-
         }
 
         private void bt_add_Click(object sender, EventArgs e)
         {
             pnl_add.Visible = true;
             txt_nom.Focus();
+            editar = false;
+        }
+
+        private void btn_listo_Click(object sender, EventArgs e)
+        {
+            RN_Categoria obj = new RN_Categoria();
+            if (txt_nom.Text.Trim().Length == 0) { MessageBox.Show("Ingresa el nombre de la categoria", "Registrar Categoria", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return; }
+
+            if (editar == false)
+            {
+                //Nuevo
+                obj.RN_Registrar_Categoria(txt_nom.Text);
+                pnl_add.Visible = false;
+                Cargar_Todos_Categ();
+                txt_nom.Text = "";
+            }
+            else
+            {
+                //Editar
+                obj.RN_Editar_Categoria(Convert.ToInt32(txt_id.Text), txt_nom.Text);
+                pnl_add.Visible = false;
+                Cargar_Todos_Categ();
+                txt_nom.Text = "";
+                editar = false;
+
+            }
+            
+        }
+
+        private void bt_edit_Click(object sender, EventArgs e)
+        {
+            if (lsv_cat.SelectedItems.Count == 0) 
+            {
+                MessageBox.Show("Seleccione el Item para editar","Advertencia de Seguridad",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);      
+                return; 
+            }
+            else 
+            { 
+                var lsv = lsv_cat.SelectedItems[0];
+                txt_id.Text = lsv.SubItems[0].Text;
+                txt_nom.Text = lsv.SubItems[1].Text;
+                pnl_add.Visible = true;
+                txt_nom.Focus();
+                editar = true;
+            
+            }
         }
     }
 }
