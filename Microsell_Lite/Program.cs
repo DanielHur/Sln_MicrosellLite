@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsell_Lite.Productos;
 using Microsell_Lite.Utilitarios;
-
+using Microsell_Lite.Proveedor;
 
 namespace Microsell_Lite
 {
@@ -19,7 +19,7 @@ namespace Microsell_Lite
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Distrito());
+            Application.Run(new Frm_AddProveedor());
         }
     }
 }

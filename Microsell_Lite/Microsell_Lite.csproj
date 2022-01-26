@@ -89,11 +89,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Proveedor\Frm_Proveedor.cs">
+    <Compile Include="Proveedor\Frm_AddProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Proveedor\Frm_Proveedor.Designer.cs">
-      <DependentUpon>Frm_Proveedor.cs</DependentUpon>
+    <Compile Include="Proveedor\Frm_AddProveedor.Designer.cs">
+      <DependentUpon>Frm_AddProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Utilitario.cs" />
     <Compile Include="Utilitarios\Form1.cs">
@@ -101,6 +101,12 @@
     </Compile>
     <Compile Include="Utilitarios\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilitarios\Frm_Advertencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilitarios\Frm_Advertencia.designer.cs">
+      <DependentUpon>Frm_Advertencia.cs</DependentUpon>
     </Compile>
     <Compile Include="Utilitarios\Frm_Distrito.cs">
       <SubType>Form</SubType>
@@ -170,8 +176,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Proveedor\Frm_Proveedor.resx">
-      <DependentUpon>Frm_Proveedor.cs</DependentUpon>
+    <EmbeddedResource Include="Proveedor\Frm_AddProveedor.resx">
+      <DependentUpon>Frm_AddProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilitarios\Frm_Advertencia.resx">
+      <DependentUpon>Frm_Advertencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Utilitarios\Frm_Distrito.resx">
       <DependentUpon>Frm_Distrito.cs</DependentUpon>
