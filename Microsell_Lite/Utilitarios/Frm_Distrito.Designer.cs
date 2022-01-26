@@ -1,6 +1,6 @@
 ﻿namespace Microsell_Lite.Utilitarios
 {
-    partial class Frm_Marca
+    partial class Frm_Distrito
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Marca));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Distrito));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnl_titu = new System.Windows.Forms.Panel();
             this.btn_cerrar = new System.Windows.Forms.Button();
@@ -41,7 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btn_listo = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.btn_cancel = new Klik.Windows.Forms.v1.EntryLib.ELButton();
-            this.lsv_mar = new System.Windows.Forms.ListView();
+            this.lsv_dis = new System.Windows.Forms.ListView();
             this.bt_edit = new System.Windows.Forms.Button();
             this.bt_add = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
@@ -65,7 +65,7 @@
             this.pnl_titu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_titu.Location = new System.Drawing.Point(0, 0);
             this.pnl_titu.Name = "pnl_titu";
-            this.pnl_titu.Size = new System.Drawing.Size(496, 43);
+            this.pnl_titu.Size = new System.Drawing.Size(520, 43);
             this.pnl_titu.TabIndex = 1;
             this.pnl_titu.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnl_titu_MouseMove);
             // 
@@ -79,7 +79,7 @@
             this.btn_cerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cerrar.ForeColor = System.Drawing.Color.White;
             this.btn_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar.Image")));
-            this.btn_cerrar.Location = new System.Drawing.Point(454, 4);
+            this.btn_cerrar.Location = new System.Drawing.Point(478, 4);
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.Size = new System.Drawing.Size(32, 32);
             this.btn_cerrar.TabIndex = 6;
@@ -94,9 +94,9 @@
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(9, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 20);
+            this.label1.Size = new System.Drawing.Size(190, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Mantenimiento de Marcas";
+            this.label1.Text = "Mantenimiento de Distrito";
             // 
             // pnl_add
             // 
@@ -128,14 +128,13 @@
             this.pnl_add.Controls.Add(this.label2);
             this.pnl_add.Controls.Add(this.btn_listo);
             this.pnl_add.Controls.Add(this.btn_cancel);
-            this.pnl_add.Location = new System.Drawing.Point(8, 53);
+            this.pnl_add.Location = new System.Drawing.Point(25, 55);
             this.pnl_add.Name = "pnl_add";
             this.pnl_add.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.pnl_add.Size = new System.Drawing.Size(474, 349);
+            this.pnl_add.Size = new System.Drawing.Size(474, 383);
             this.pnl_add.TabIndex = 3;
             this.pnl_add.Visible = false;
             this.pnl_add.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
-            this.pnl_add.Click += new System.EventHandler(this.pnl_add_Click);
             // 
             // txt_nom
             // 
@@ -152,9 +151,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(23, 79);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 16);
+            this.label3.Size = new System.Drawing.Size(48, 16);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Marca";
+            this.label3.Text = "Distrito";
             // 
             // txt_id
             // 
@@ -172,9 +171,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(24, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 16);
+            this.label2.Size = new System.Drawing.Size(62, 16);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Id Marca";
+            this.label2.Text = "Id Distrito";
             // 
             // btn_listo
             // 
@@ -192,7 +191,7 @@
             this.btn_listo.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.btn_listo.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
             this.btn_listo.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_listo.Location = new System.Drawing.Point(221, 207);
+            this.btn_listo.Location = new System.Drawing.Point(225, 179);
             this.btn_listo.Name = "btn_listo";
             this.btn_listo.Office2007Scheme = Klik.Windows.Forms.v1.Common.Office2007Schemes.ModernBlack;
             this.btn_listo.Size = new System.Drawing.Size(157, 49);
@@ -223,7 +222,7 @@
             this.btn_cancel.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
             this.btn_cancel.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
             this.btn_cancel.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_cancel.Location = new System.Drawing.Point(25, 207);
+            this.btn_cancel.Location = new System.Drawing.Point(29, 179);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Office2007Scheme = Klik.Windows.Forms.v1.Common.Office2007Schemes.ClassicSilver;
             this.btn_cancel.Size = new System.Drawing.Size(157, 49);
@@ -240,16 +239,16 @@
             this.btn_cancel.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_cancel.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
             // 
-            // lsv_mar
+            // lsv_dis
             // 
-            this.lsv_mar.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lsv_mar.ForeColor = System.Drawing.Color.DimGray;
-            this.lsv_mar.HideSelection = false;
-            this.lsv_mar.Location = new System.Drawing.Point(25, 118);
-            this.lsv_mar.Name = "lsv_mar";
-            this.lsv_mar.Size = new System.Drawing.Size(400, 187);
-            this.lsv_mar.TabIndex = 4;
-            this.lsv_mar.UseCompatibleStateImageBehavior = false;
+            this.lsv_dis.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lsv_dis.ForeColor = System.Drawing.Color.DimGray;
+            this.lsv_dis.HideSelection = false;
+            this.lsv_dis.Location = new System.Drawing.Point(25, 95);
+            this.lsv_dis.Name = "lsv_dis";
+            this.lsv_dis.Size = new System.Drawing.Size(474, 343);
+            this.lsv_dis.TabIndex = 4;
+            this.lsv_dis.UseCompatibleStateImageBehavior = false;
             // 
             // bt_edit
             // 
@@ -261,9 +260,9 @@
             this.bt_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_edit.ForeColor = System.Drawing.Color.White;
             this.bt_edit.Image = ((System.Drawing.Image)(resources.GetObject("bt_edit.Image")));
-            this.bt_edit.Location = new System.Drawing.Point(370, 59);
+            this.bt_edit.Location = new System.Drawing.Point(390, 60);
             this.bt_edit.Name = "bt_edit";
-            this.bt_edit.Size = new System.Drawing.Size(39, 40);
+            this.bt_edit.Size = new System.Drawing.Size(32, 32);
             this.bt_edit.TabIndex = 7;
             this.bt_edit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_edit.UseVisualStyleBackColor = true;
@@ -279,7 +278,7 @@
             this.bt_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add.ForeColor = System.Drawing.Color.White;
             this.bt_add.Image = ((System.Drawing.Image)(resources.GetObject("bt_add.Image")));
-            this.bt_add.Location = new System.Drawing.Point(410, 63);
+            this.bt_add.Location = new System.Drawing.Point(435, 57);
             this.bt_add.Name = "bt_add";
             this.bt_add.Size = new System.Drawing.Size(32, 32);
             this.bt_add.TabIndex = 8;
@@ -297,28 +296,28 @@
             this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.ForeColor = System.Drawing.Color.White;
             this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
-            this.btn_delete.Location = new System.Drawing.Point(322, 53);
+            this.btn_delete.Location = new System.Drawing.Point(347, 60);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(53, 51);
+            this.btn_delete.Size = new System.Drawing.Size(32, 32);
             this.btn_delete.TabIndex = 9;
             this.btn_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_delete.UseVisualStyleBackColor = true;
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
-            // Frm_Marca
+            // Frm_Distrito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(496, 413);
+            this.ClientSize = new System.Drawing.Size(520, 468);
             this.Controls.Add(this.pnl_add);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.bt_add);
             this.Controls.Add(this.bt_edit);
-            this.Controls.Add(this.lsv_mar);
+            this.Controls.Add(this.lsv_dis);
             this.Controls.Add(this.pnl_titu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Frm_Marca";
+            this.Name = "Frm_Distrito";
             this.Text = "Frm_Reg_Prod";
             this.Load += new System.EventHandler(this.Frm_Reg_Prod_Load);
             this.pnl_titu.ResumeLayout(false);
@@ -347,7 +346,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bt_add;
         private System.Windows.Forms.Button bt_edit;
-        private System.Windows.Forms.ListView lsv_mar;
+        private System.Windows.Forms.ListView lsv_dis;
         private System.Windows.Forms.Button btn_delete;
     }
 }
