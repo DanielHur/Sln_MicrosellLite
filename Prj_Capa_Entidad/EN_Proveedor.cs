@@ -15,6 +15,7 @@ namespace Prj_Capa_Entidad
         private string _rubro;
         private string _ruc;
         private string _correo;
+
         private string _contacto;
 
         private string _fotologo;
