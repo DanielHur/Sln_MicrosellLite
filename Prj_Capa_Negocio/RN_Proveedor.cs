@@ -32,5 +32,12 @@ namespace Prj_Capa_Negocio
 
         }
 
+
+        public DataTable RN_Buscar_Proveedor(string valor) 
+        {
+            BD_Proveedor obj = new BD_Proveedor();
+            return obj.Bd_Buscar_Proveedor(valor);
+        
+        }
     }
 }

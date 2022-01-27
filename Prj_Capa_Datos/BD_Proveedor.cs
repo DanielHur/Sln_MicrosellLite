@@ -78,7 +78,7 @@ namespace Prj_Capa_Datos
                     cn.Close();
                     //MessageBox.Show("Error al Guardar: " + ex.Message, "Capa Dato Distrito", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
-                MessageBox.Show("Error al Guardar: " + ex.Message, "Capa Dato Proveedor", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error al Editar: " + ex.Message, "Capa Dato Proveedor", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -102,12 +102,37 @@ namespace Prj_Capa_Datos
                 {
                     cn.Close();
                 }
-                MessageBox.Show("Error al Eliminar: " + ex.Message, "Capa Dato Proveedor", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error al Buscar Todos: " + ex.Message, "Capa Dato Proveedor", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return null;
             }
 
         }
 
+        public DataTable Bd_Buscar_Proveedor(string valor)
+        {
+            SqlConnection cn = new SqlConnection();
+            try
+            {
+                cn.ConnectionString = Conectar();
+                SqlDataAdapter da = new SqlDataAdapter("sp_buscar_proveedor_porvalor", cn);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@valor",valor);
+                DataTable data = new DataTable();
+                da.Fill(data);
+                da = null;
+                return data;
+            }
+            catch (Exception ex)
+            {
+                if (cn.State == ConnectionState.Open)
+                {
+                    cn.Close();
+                }
+                MessageBox.Show("Error al Buscar: " + ex.Message, "Capa Dato Proveedor", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return null;
+            }
+
+        }
 
 
     }

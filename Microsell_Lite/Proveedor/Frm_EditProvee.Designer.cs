@@ -1,6 +1,6 @@
 ﻿namespace Microsell_Lite.Proveedor
 {
-    partial class Frm_AddProveedor
+    partial class Frm_EditProvee
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_AddProveedor));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_EditProvee));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnl_titu = new System.Windows.Forms.Panel();
             this.btn_cerrar = new System.Windows.Forms.Button();
@@ -108,9 +108,9 @@
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(9, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 20);
+            this.label1.Size = new System.Drawing.Size(144, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Registro Proveedores";
+            this.label1.Text = "Editar Proveedores";
             // 
             // gru_det
             // 
@@ -225,6 +225,7 @@
             this.btn_cancel.TextStyle.Text = "Cancelar";
             this.btn_cancel.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_cancel.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // txt_nom_prov
             // 
@@ -406,7 +407,7 @@
             this.label9.Text = "Nombre Contacto";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // Frm_AddProveedor
+            // Frm_EditProvee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -436,7 +437,7 @@
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.pnl_titu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Frm_AddProveedor";
+            this.Name = "Frm_EditProvee";
             this.Text = "Frm_Reg_Prod";
             this.Load += new System.EventHandler(this.Frm_Reg_Prod_Load);
             this.pnl_titu.ResumeLayout(false);
