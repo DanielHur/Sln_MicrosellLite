@@ -56,12 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cls_UsuLogin.cs" />
-    <Compile Include="Frm_DFD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_DFD.Designer.cs">
-      <DependentUpon>Frm_DFD.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm_Filtro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,9 +162,6 @@
     <Compile Include="Ventas\Frm_Ventana_Ventas.Designer.cs">
       <DependentUpon>Frm_Ventana_Ventas.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Frm_DFD.resx">
-      <DependentUpon>Frm_DFD.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Filtro.resx">
       <DependentUpon>Frm_Filtro.cs</DependentUpon>
     </EmbeddedResource>
