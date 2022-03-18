@@ -63,5 +63,23 @@ namespace Prj_Capa_Entidad
         //@ValorporProd real
         private double _valorPorProd;
 
+        public string Idpro { get => _idpro; set => _idpro = value; }
+        public string Idprove { get => _idprove; set => _idprove = value; }
+        public string Descripcion { get => _descripcion; set => _descripcion = value; }
+        public double Frank { get => frank; set => frank = value; }
+        public double Pre_compraSol { get => _pre_compraSol; set => _pre_compraSol = value; }
+        public double Pre_compraDolar { get => _pre_compraDolar; set => _pre_compraDolar = value; }
+        public double StockActual { get => _stockActual; set => _stockActual = value; }
+        public int IdCat { get => _idCat; set => _idCat = value; }
+        public int IdMar { get => _idMar; set => _idMar = value; }
+        public string Foto { get => _foto; set => _foto = value; }
+        public double Pre_venta_menor { get => _pre_venta_menor; set => _pre_venta_menor = value; }
+        public double Pre_venta_mayor { get => _pre_venta_mayor; set => _pre_venta_mayor = value; }
+        public double Pre_venta_dolar { get => _pre_venta_dolar; set => _pre_venta_dolar = value; }
+        public string UndMedida { get => _undMedida; set => _undMedida = value; }
+        public double PesoUnit { get => _pesoUnit; set => _pesoUnit = value; }
+        public double Utilidad { get => _utilidad; set => _utilidad = value; }
+        public string TipoProd { get => _tipoProd; set => _tipoProd = value; }
+        public double ValorPorProd { get => _valorPorProd; set => _valorPorProd = value; }
     }
 }
