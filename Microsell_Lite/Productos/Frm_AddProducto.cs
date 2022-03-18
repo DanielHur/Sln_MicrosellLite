@@ -62,6 +62,8 @@ namespace Microsell_Lite.Proveedor
                 MessageBox.Show("Error al guardar imagen de Proveedor", ex.Message);
 
 
+
+
             }
 
         }
