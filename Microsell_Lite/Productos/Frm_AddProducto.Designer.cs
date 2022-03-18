@@ -1,4 +1,4 @@
-﻿namespace Microsell_Lite.Proveedor
+﻿namespace Microsell_Lite.Productos
 {
     partial class Frm_AddProducto
     {
@@ -75,6 +75,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.lbl_IdProvee = new System.Windows.Forms.Label();
             this.pnl_titu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_listo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).BeginInit();
@@ -546,6 +547,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(18, 25);
             this.label21.TabIndex = 45;
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // bunifuSeparator1
             // 
@@ -559,12 +561,21 @@
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
             // 
+            // lbl_IdProvee
+            // 
+            this.lbl_IdProvee.AutoSize = true;
+            this.lbl_IdProvee.Location = new System.Drawing.Point(492, 200);
+            this.lbl_IdProvee.Name = "lbl_IdProvee";
+            this.lbl_IdProvee.Size = new System.Drawing.Size(0, 13);
+            this.lbl_IdProvee.TabIndex = 47;
+            // 
             // Frm_AddProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(589, 778);
+            this.Controls.Add(this.lbl_IdProvee);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
@@ -666,5 +677,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label21;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private System.Windows.Forms.Label lbl_IdProvee;
     }
 }

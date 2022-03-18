@@ -10,8 +10,9 @@ using System.Windows.Forms;
 using Microsell_Lite.Utilitarios;
 using Prj_Capa_Entidad;
 using Prj_Capa_Negocio;
+using Microsell_Lite.Proveedor;
 
-namespace Microsell_Lite.Proveedor
+namespace Microsell_Lite.Productos
 {
     public partial class Frm_AddProducto : Form
     {
@@ -130,6 +131,25 @@ namespace Microsell_Lite.Proveedor
 
         private void label20_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+            Frm_Filtro fil = new Frm_Filtro();
+            Frm_ListadoProveedor lis = new Frm_ListadoProveedor();
+            
+            fil.Show();
+            lis.ShowDialog();
+            fil.Hide();
+
+            if (lis.Tag.ToString() == "A") 
+            {
+                txt_Prov.Text = lis.lb_Nombre.Text;
+                lbl_IdProvee.Text = lis.lb_Id.Text;  
+
+
+            }
 
         }
     }
