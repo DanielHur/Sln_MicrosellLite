@@ -60,6 +60,8 @@ namespace Microsell_Lite.Proveedor
                 piclogo.Load(Application.StartupPath + @"\usuario2.png");
                 xFotoruta = Application.StartupPath + @"\usuario2.png";
                 MessageBox.Show("Error al guardar imagen de Proveedor", ex.Message);
+
+
             }
 
         }
