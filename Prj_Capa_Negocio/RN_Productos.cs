@@ -24,6 +24,7 @@ namespace Prj_Capa_Negocio
             BD_Productos obj = new BD_Productos();
             obj.BD_Editar_Producto(pro);
 
+
         }
 
 
