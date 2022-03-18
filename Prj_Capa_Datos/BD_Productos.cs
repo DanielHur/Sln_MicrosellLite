@@ -133,7 +133,7 @@ namespace Prj_Capa_Datos
 
         }
 
-        public DataTable Bd_Buscar_Productos(string valor)
+        public DataTable BD_Buscar_Productos(string valor)
         {
             SqlConnection cn = new SqlConnection();
             try
