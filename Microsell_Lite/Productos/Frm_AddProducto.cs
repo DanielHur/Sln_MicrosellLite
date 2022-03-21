@@ -136,6 +136,7 @@ namespace Microsell_Lite.Productos
 
         private void label21_Click(object sender, EventArgs e)
         {
+
             Frm_Filtro fil = new Frm_Filtro();
             Frm_ListadoProveedor lis = new Frm_ListadoProveedor();
             
