@@ -149,6 +149,7 @@ namespace Microsell_Lite.Productos
 
 
             fil.Show();
+            
             lis.ShowDialog();
             fil.Hide();
 
