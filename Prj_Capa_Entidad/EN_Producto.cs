@@ -47,7 +47,7 @@ namespace Prj_Capa_Entidad
         private Double _pre_venta_mayor;
 
         //@Pre_Venta_Dolar real,
-        private Double _pre_venta_real;
+        private Double _pre_venta_Dolar;
 
         //@UndMdida char (6),
         private String _UndMedida;
@@ -77,7 +77,7 @@ namespace Prj_Capa_Entidad
         public string Foto { get => _foto; set => _foto = value; }
         public double Pre_venta_menor { get => _pre_venta_menor; set => _pre_venta_menor = value; }
         public double Pre_venta_mayor { get => _pre_venta_mayor; set => _pre_venta_mayor = value; }
-        public double Pre_venta_real { get => _pre_venta_real; set => _pre_venta_real = value; }
+        public double Pre_venta_Dolar { get => _pre_venta_Dolar; set => _pre_venta_Dolar = value; }
         public string UndMedida { get => _UndMedida; set => _UndMedida = value; }
         public double PesoUnit { get => _pesoUnit; set => _pesoUnit = value; }
         public double Utilidad { get => _utilidad; set => _utilidad = value; }
